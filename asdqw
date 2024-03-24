@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+
+</head>
+<body id="shid"> 
+  
+  <section style="text-align: center" class="bg-fundo">      
+     <div class="timer-top" style="color:white; font-size: 69px;">          
+          <span id="time">02:00</span>
+          <div class="minutos" style="color:white;font-size: 19px;">Minutos</div>    
+          <div class="segundos" style="color:white;font-size: 19px;">Segundos</div> 
+     </div>
+      
+     
+    <div class="headline-ainda" style="color:#EAFF73;;font-size: 33px;margin-bottom: 13px;">AINDA ESTÁ NO AR...</div>     
+    <div class="container padding-thumb margin-thumb" style="max-width: 100%;padding: 0;"> 
+      <div class="row" style="width: 100%;height: 100%; margin-left: 0px;">
+          <div class="col-sm-12" style="width: 100%; height: 100%;margin-bottom: 15px;margin-right: 10px;padding: 0px;">    
+
+              <a href="https://flashpadrao.site/apresentacao"><img class="img-desk img-fluid hover-shadow" style="width:100%; height:100%;border: 8px solid yellow;" src="thumb.png"></a>                       
+          </div>
+      </div>
+    </div>
+    </a> 
+    
+  <div class="btn-celular-lixo container pulse-bot">              
+    <a href="https://flashpadrao.site/apresentacao" class="a-btn botaoMobile" style="background-color: #C23434 !important;padding: 20px 40px 20px 40px;">
+       <i style="color: white;" aria-hidden="true" class="seta-icone fa fa-mouse-pointer"></i>
+       <span class="span-btn txt-btn-desk" style="color: white;font-weight: 800;font-family: 'Montserrat', sans-serif;font-size:18px;text-shadow: 0px 0px;">ASSISTA ENQUANTO ESTÁ NO AR</span>
+     </a>
+  </div>
+
+  </section>
+
+
+  <!-- *********** FOOTER ***************** -->
+    <section style="padding: 11px 37px 23px 37px; background-color: black; text-align: center"> 
+      <div class="container"> 
+        <div class="row yeah-r">
+          <div class="col-sm-12" style="width: 100%;padding-right: 0;">
+            <div class="container" style="padding: 0;"> 
+              <p style="text-align: center;margin:0;font-size:14px;color:#2A2A2A;font-weight: bolder;"><b>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook.</b>Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.</p>
+              <p style="text-align: center;font-size:14px;color:#2A2A2A;font-weight: bolder;">Todos os direitos reservados.</p>
+            </div>
+            <div class="container" style="padding: 0;"> 
+              <p style="text-align: center;margin:0"><span style="font-size:14px;color:#2A2A2A;"><a style="color: #808080; text-decoration: none;" href="https://flashpadrao.site/apresentacao/privacidade.html"> Políticas de Privacidade</a> | <a style="color: #808080; text-decoration: none;" href="https://flashpadrao.site/apresentacao/termos.html">Termos de Uso</a></span>
+              </p> 
+            </div>
+          </div>
+        </div>      
+      </div>      
+    </section>
+  
+
+  <script type="text/javascript">
+    function startTimer(duration, display) {
+      var timer = duration, minutes, seconds;
+      setInterval(function () {
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = minutes + ":" + seconds;
+
+          if (--timer < 0) {
+              timer = duration;
+          }
+      }, 1000);
+    }
+
+    window.onload = function () {
+        var fiveMinutes = 60 * 2,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
+
+
+    function fuuck(){
+      document.getElementsByTagName("body")
+    };
+
+    $("#shid").click(function(){
+     window.location=$(this).find("a").attr("href");
+     return false;
+});
+  </script>
+
+</body>
+</html>
